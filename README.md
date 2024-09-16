@@ -10,6 +10,10 @@ Wanikoko SD/USB Loader 1.5, Kwiirk Yal&cios 222, Hermes uLoader 1.6&cios 222/223
 (Sorg, nIxx, fishears, usptactical, 56Killer, WiiShizzza, hungyip84, Narolez, ...)
 
 
+## 공식 사이트
+http://cfgusbloader.ntd.homelinux.org/
+
+
 ## 기능
 
  - SDHC, USB HDD 장치 지원
@@ -74,38 +78,38 @@ http://wiitdb.com/titles.txt
 
 ## 기본 파일 위치
 
-  - 구성 파일:        sd:/usb-loader/config.txt
-  - 설정 파일:        sd:/usb-loader/settings.cfg
-  - 배경 이미지:      sd:/usb-loader/background.png
-  - 커버들:
-    - 2D:             sd:/usb-loader/covers/2d/*.png
-    - 3D:             sd:/usb-loader/covers/3d/*.png
-    - 디스크:         sd:/usb-loader/covers/disc/*.png
-    - 모두 (긜고 HQ): sd:/usb-loader/covers/full/*.png
-    - 캐쉬:           sd:/usb-loader/covers/cache/*.ccc
-  - 타이틀 파일:      sd:/usb-loader/titles.txt
-  - 테마:             sd:/usb-loader/themes/THEME_NAME/theme.txt
-  - 테마 미리보기:    sd:/usp-loader/themes/*.jpg
+	구성 파일:        sd:/usb-loader/config.txt
+	설정 파일:        sd:/usb-loader/settings.cfg
+	배경 이미지:      sd:/usb-loader/background.png
+	커버들:
+		2D:             sd:/usb-loader/covers/2d/*.png
+		3D:             sd:/usb-loader/covers/3d/*.png
+		디스크:         sd:/usb-loader/covers/disc/*.png
+		모두 (긜고 HQ): sd:/usb-loader/covers/full/*.png
+		캐쉬:           sd:/usb-loader/covers/cache/*.ccc
+	타이틀 파일:      sd:/usb-loader/titles.txt
+	테마:             sd:/usb-loader/themes/THEME_NAME/theme.txt
+	테마 미리보기:    sd:/usp-loader/themes/*.jpg
 
-  - 오카리나 치트 코드들은 아래 경로에서 찾을 수 있음:
-    sd:/usb-loader/codes/*.gct
-    sd:/data/gecko/codes/*.gct
-    sd:/codes/*.gct
+	오카리나 치트 코드들은 아래 경로에서 찾을 수 있음:
+    		sd:/usb-loader/codes/*.gct
+    		sd:/data/gecko/codes/*.gct
+    		sd:/codes/*.gct
     
-  - 오카리나 TXT 치트 코드들은 아래 위치를 사용함:
-    - 다운로드 대상:  sd:/usb-loader/codes/*.txt
-    - 저장된 .gct  :  sd:/usb-loader/codes/*.gct
+	오카리나 TXT 치트 코드들은 아래 위치를 사용함:
+    		- 다운로드 대상:  sd:/usb-loader/codes/*.txt
+    		- 저장된 .gct  :  sd:/usb-loader/codes/*.gct
 
-  - wiitdb:           sd:/usb-loader/wiitdb.zip
-  - 재생 이력:        sd:/usb-loader/playstats.txt
+	wiitdb:           sd:/usb-loader/wiitdb.zip
+	재생 이력:        sd:/usb-loader/playstats.txt
 
-  - .wip 파일들:      sd:/usb-loader/GAMEID.wip
-  - .bca 파일들:      sd:/usb-loader/GAMEID.bca
-  - .wdm 파일들:      sd:/usb-loader/GAMEID.wdm
+	.wip 파일들:      sd:/usb-loader/GAMEID.wip
+	.bca 파일들:      sd:/usb-loader/GAMEID.bca
+	.wdm 파일들:      sd:/usb-loader/GAMEID.wdm
 
-  - nand 이미지       usb:/nand
+	nand 이미지       usb:/nand
 
-  - FAT/NTFS 상의 게임들
+	FAT/NTFS 상의 게임들
 	                    usb:/wbfs/GAMEID.wbfs
   	또는:             usb:/wbfs/TITLE [GAMEID].wbfs
   	또는:             usb:/wbfs/GAMEID_TITLE/GAMEID.wbfs
@@ -113,23 +117,23 @@ http://wiitdb.com/titles.txt
   	(또는 usb:/ 대신에 sd:/)
 
 이것들은 기본 위치이며 배경과 커버는 구성 가능합니다.
-설정 파일이 sd:/usb-loader에서 발견되지 않으면, sd:/apps/USBLoader/config.txt
-(또는 홈브류 채널에서 시작하는 데 사용되는 디렉토리)를 검색하고, 발견되면
-기본 경로는 다음과 같습니다. 해당 위치로 설정하십시오.
 
-글로벌 설정 파일 sd:/usb-loader/config.txt 외에 apps 폴더의 config.txt도 사용됩니다 기본적으로:
+설정 파일이 sd:/usb-loader에서 발견되지 않으면, sd:/apps/USBLoader/config.txt
+(또는 홈브류 채널에서 시작하는 데 사용되는 디렉토리)를 검색하고, 발견되면 기본 경로는 다음과 같습니다. 해당 위치로 설정하십시오.
+
+기본적으로 글로벌 설정 파일 sd:/usb-loader/config.txt 외에 apps 폴더의 config.txt도 사용됩니다:
 sd:/apps/USBLoader/config.txt 이지만 로더가 홈브류 채널에서 시작된 위치에 따라 다릅니다.
 
-구성 파일을 지정하는 또 다른 방법은 추가 인수를 허용하는 PC의 
-wiiload 유틸리티를 사용하는 것 입니다:
+구성 파일을 지정하는 또 다른 방법은 추가 인수를 허용하는 PC의 wiiload 유틸리티를 사용하는 것 입니다:
 C:\> wiiload usbloader.dol config21.txt
-sd:/usb-loader/config21.txt를 불러오고
-configl 옵션을 전달할 수도 있습니다:
+
+sd:/usb-loader/config21.txt를 불러오고 configl 옵션을 전달할 수도 있습니다:
 C:\> wiiload usbloader.dol video=ntsc
 
 따라서 시작 위치에 따라 다른 구성을 가질 수 있습니다.
 이는 포워더에서 시작된 로더를 simple / childproff로 구성하고 홈브류 채널에서 시작하여
-설치 및 제거 옵션을 포함하도록 구성 할 수 있으므로 유용 할 수 있습니다
+설치 및 제거 옵션을 포함하도록 구성 할 수 있으므로 유용 할 수 있습니다.
+
 이를 위해, sd:/apps/USBLoader/를 sd:/apps/USBLoader_admin으로 복사 한 다음
 sd:/apps/USBLoader/config.txt에 simple = 1로 설정하고 sd:/apps/USBLoader_admin/meta를
 편집 (또는 삭제) 합니다. .xml을 사용하여 다른 이름을 표시합니다.
@@ -163,14 +167,16 @@ sd:/apps/USBLoader/config.txt 및 sd:/usb-loader/config.txt를 삭제합니다.
 -------
 
 로더를 사용자 정의하는 또 다른 방법은 테마를 사용하는 것입니다.
-테마는 다음 위치에 구성 파일을 작성하여 정의:
-sd:/usb-loader/themes/THEME_NAME/theme.txt
+
+테마는 다음 위치에 구성 파일을 작성하여 정의: sd:/usb-loader/themes/THEME_NAME/theme.txt
+
 그리고 배경 이미지:
 sd:/usb-loader/themes/THEME_NAME/background.png
 sd:/usb-loader/themes/THEME_NAME/background_wide.png
 
 theme.txt에서 사용할 수있는 옵션은 아래에 설명되어 있고,
 기본적으로 보기를 정의하는 옵션 만 허용되며 그 외 모든 것은 theme.txt에서 무시됩니다.
+
 배경 이미지 (background.png 또는 배경 옵션)은 테마 폴더(sd:/usb-loader/themes/THEME_NAME/)에서
 먼저 검색되고 찾지 못하면 기본 폴더(sd:/usb-loader/)에서 검색됩니다.
 
