@@ -167,9 +167,7 @@ sd:/apps/USBLoader/config.txt 및 sd:/usb-loader/config.txt를 삭제합니다.
 -------
 
 로더를 사용자 정의하는 또 다른 방법은 테마를 사용하는 것입니다.
-
 테마는 다음 위치에 구성 파일을 작성하여 정의: sd:/usb-loader/themes/THEME_NAME/theme.txt
-
 그리고 배경 이미지:
 sd:/usb-loader/themes/THEME_NAME/background.png
 sd:/usb-loader/themes/THEME_NAME/background_wide.png
@@ -226,6 +224,7 @@ GUI 모드:
 기본적으로 콘솔 모드가 시작됩니다.
 GUI 모드로 전환하려면 기본 화면에서 B 버튼을 누릅니다.
 GUI 모드에서는 기본적으로 다음 버튼이 사용됩니다 (다시 매핑 할 수 있음):
+
     A 버튼 : 선택된 게임 시작
     B 버튼 : 콘솔 모드 돌아가기
     왼쪽/오른쪽 버튼 (그리드): 이전/다음 페이지
@@ -236,7 +235,9 @@ GUI 모드에서는 기본적으로 다음 버튼이 사용됩니다 (다시 매
     버튼 1, +, - : 옵션, 설치, 삭제
     버튼 2: 즐겨찾기 게임 목록
     홈 버튼 : 종료
+     
 GUI 모드에 배경 이미지는 파일에서 변경할 수 있음:
+
     sd:/usb-loader/themes/Theme_Name/bg_gui.png  또는
     sd:/usb-loader/bg_gui.png
 
@@ -279,6 +280,7 @@ GUI 모드에 배경 이미지는 파일에서 변경할 수 있음:
 암호 길이는 10 문자로 제한됩니다. 암호 주위에 따옴표를 사용하지 않습니다. 원하는 것을 입력합니다.
 예.  unlock_password = 12UDAB
 다음은 비밀번호에 대한 문자 매핑 버튼입니다.:
+
       D-패드 위쪽:   U
       D-패드 아래:   D
       D-패드 오른쪽: R
@@ -333,10 +335,9 @@ GUI 모드에 배경 이미지는 파일에서 변경할 수 있음:
 
 게임 타이틀 이름을 바꾸려면 SD에서 파일을 편집합니다.
 sd:/usb-loader/titles.txt 또는 sd:/usb-loader/custom-titles.txt
-형식은:
-GAMEID = 게임 타이틀
-예제:
-RSPP = Wii Sports
+
+형식은: GAMEID = 게임 타이틀
+예제: RSPP = Wii Sports
 
 ## 구성 파일
 
